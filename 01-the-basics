@@ -1,0 +1,111 @@
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop
+$ mkdir git-basic
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop
+$ cd git-basic
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic
+$ touch first.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic
+$ git init .
+Initialized empty Git repository in C:/Users/JAVACOMP-KPJN/Desktop/git-basic/.git/
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git add .
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git commit -m "adding first.txt"
+[master (root-commit) 42f9593] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git log
+commit 42f9593ad67e2978ee7b374e115e88f30bacba50 (HEAD -> master)
+Author: prindayu arum <prindayu.pink@gmail.com>
+Date:   Fri Feb 4 15:00:12 2022 +0700
+
+    adding first.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ touch second.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git add .
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   second.txt
+
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git commit -m "adding second.txt"
+[master b143fb1] adding second.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 second.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ rm first.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git add .
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git commit -m "removing first.txt"
+[master 27cec60] removing first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$ git log
+commit 27cec607247b15e8e07480857109c229f1e4d5fe (HEAD -> master)
+Author: prindayu arum <prindayu.pink@gmail.com>
+Date:   Fri Feb 4 15:15:18 2022 +0700
+
+    removing first.txt
+
+commit b143fb1c7f90d435d668c89c3b5258fbe47ddeaf
+Author: prindayu arum <prindayu.pink@gmail.com>
+Date:   Fri Feb 4 15:11:52 2022 +0700
+
+    adding second.txt
+
+commit 42f9593ad67e2978ee7b374e115e88f30bacba50
+Author: prindayu arum <prindayu.pink@gmail.com>
+Date:   Fri Feb 4 15:00:12 2022 +0700
+
+    adding first.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/git-basic (master)
+$

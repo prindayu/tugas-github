@@ -1,0 +1,7 @@
+1.  Perintah git reset, akan mengembalikan file ke kondisi sebelumnya, kemudian menghapus catatan sejarah commit beikutnya.
+    Perintah git revert mengembalikan file dengan tidak menghapus sejarah commit.
+2.  Git rebase adalah memindahkan cabang dari satu lokasi ke lokasi lain, yang mengakibatkan beberapa aspek sejarah pembangunan hilang. yang berarti komitmen asli yang menjadi dasar pengembangannya akan diubah. dan secara efektif menggabungkan semua komitmen baru di cabang utama dengan menulis ulang sejarah.
+    Git merge adalah perintah yang menyatukan dua atau lebih cabang histori komit. pengguna menggabungkan cabang ke cabang lain di repositori lokal mereka di lingkungan lokal, serta mengintegrasikan konten cabang sumber dengan cabang target. yang menghasilkan Cabang target diubah, sementara cabang sumber tetap.
+3.  git stash pop membuang simpanan (paling atas, secara default) setelah menerapkannya. Jika Anda ingin menerapkan perubahan simpanan teratas Anda untuk perubahan yang tidak dipentaskan saat ini dan menghapus simpanan itu juga.
+    git stash apply menyimpannya di daftar simpanan untuk kemungkinan nanti digunakan kembali. Tetapi jika Anda ingin menerapkan perubahan simpanan teratas Anda ke perubahan tidak dipentaskan saat ini tanpa menghapusnya.
+4.  Rebasing interaktif dapat digunakan untuk mengubah komit dalam banyak cara seperti mengedit, menghapus, dan meremas. Untuk memberi tahu Git tempat memulai rebase interaktif, gunakan SHA-1 atau indeks komit yang segera mendahului komit yang ingin Anda ubah.

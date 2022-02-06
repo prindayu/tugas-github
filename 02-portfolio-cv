@@ -1,0 +1,219 @@
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop (master)
+$ mkdir arum
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop (master)
+$ cd arum/
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ touch README.md
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ echo "Halo perkenalkan aku halaman utama" > README.md
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git init .
+Initialized empty Git repository in C:/Users/JAVACOMP-KPJN/Desktop/arum/.git/
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git commit -m "inisialisasi git repository"
+[master (root-commit) 51f7694] inisialisasi git repository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git branch
+* master
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ gitt branch cv
+bash: gitt: command not found
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git branch
+* master
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ ls
+README.md
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git branch cv
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git branch
+  cv
+* master
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git checkout cv
+Switched to branch 'cv'
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ touch cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ echo "ini adalah file cv" > cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git add .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git commit -m "Inisialisasi CV"
+[cv c470554] Inisialisasi CV
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git status
+On branch cv
+nothing to commit, working tree clean
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ echo "PT AMMAN" > cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ ls
+README.md  cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git add .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git commit -m "perusahaan I"
+[cv 8405c5a] perusahaan I
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ echo "PERTAMINA" > cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git add .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git commit -m "perusahaan II"
+[cv 4559092] perusahaan II
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ echo "ASTRA INDONESIA" > cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git add .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git commit -m "perusahaan III"
+[cv e491276] perusahaan III
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git status
+On branch cv
+nothing to commit, working tree clean
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (cv)
+$ git checkout master
+Switched to branch 'master'
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ echo "Halo perkenalkan aku halaman utama, ini adalah update pertama pada branch master" > README.md
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git commit -m "update master pertama"
+[master 5643ccf] update master pertama
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git log
+commit 5643ccf0dba25b65fce6292566b959d1c5ccf197 (HEAD -> master)
+Author: prindayu arum <prindayu.pink@gmail.com>
+Date:   Sat Feb 5 01:25:52 2022 +0700
+
+    update master pertama
+
+commit 51f76942c3a7a3c5c21b3027bd0a4546258ab141
+Author: prindayu arum <prindayu.pink@gmail.com>
+Date:   Sat Feb 5 01:16:26 2022 +0700
+
+    inisialisasi git repository
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git branch
+  cv
+* master
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git checkout master
+Already on 'master'
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ ls
+README.md
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git branch
+  cv
+* master
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ git merge --no-ff cv
+Merge made by the 'ort' strategy.
+ cv.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cv.txt
+
+JAVACOMP-KPJN@JAVACOMP-KPJNPC MINGW32 ~/Desktop/arum (master)
+$ ls
+README.md  cv.txt
+
+
+
+
+
+

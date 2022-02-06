@@ -1,0 +1,11 @@
+1.  git clean adalah perintah yang memungkinkan anda untuk menghapus file yang tidak dilacak.
+2.  -d dan -f adalah memberitahu git untuk menghapus direktori dan file yang tidak terlacak.
+3.  git branch untuk membuat cabang
+4.  fast-forward = no new commits on the master, linear history, no merge commits, git rebase.
+    recursive merge = new commits on the master, commits 2 parents, merge commits is created, git merge --no--ff .
+5.  Git is to use the “git checkout” command and specify the name of the branch you want to switch to.
+6.  git rm -f
+7.  git branch command and pass in the -d flag, and you will pass in the name of the branch you wish to delete.
+8.  git diff adalah perintah Git multi guna yang ketika dijalankan menjalankan fungsi diff pada sumber data Git. Perintah git diff sering digunakan bersama dengan status git dan log git untuk menganalisis status repo Git saat ini.
+9.  "git rm --cached FILE.NAME" = untuk remove file from staging dan "git rm --cached -r" to remove all files from staging area git.
+10. A merge conflict is an event that occurs when Git is unable to automatically resolve differences in code between two commits.
